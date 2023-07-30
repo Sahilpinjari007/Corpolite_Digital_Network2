@@ -1,0 +1,348 @@
+:root {
+
+    --primary-color: #fa6742;
+    --second-primary-color: #fff;
+    --thard-primary-color: #2e2c2d;
+    --light-font-color: #545353;
+    --secon-font-light-color: #919191;
+    --second-bg-color: #f7f9f8;
+    --footer-first-color: #151414;
+    --footer-second-color: #202020;
+    --footer-txt-color: #686868;
+}
+
+body.active{
+    height: 100vh;
+}
+
+.contact-section {
+    width: 100vw;
+    padding-block: 100px;
+}
+
+.contact-section .contact-content {
+    height: max-content;
+    padding-block: 10px;
+}
+
+.contact-content .contact-top {
+    text-align: center;
+}
+
+.contact-content .contact-bottom {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+
+.contact-content .contact-left {
+    width: 60%;
+    height: 100%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.contact-left .left-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 15px;
+}
+
+.left-top .email-heading {
+    color: black;
+    margin: 0;
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+}
+
+.left-top .email-icon i {
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.left-bottom .email-form {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.email-form .form-rows {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.form-rows .material-textfield {
+    position: relative;
+}
+
+.material-textfield label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: gray;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+}
+
+.material-textfield .mail-inputs {
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 1rem 0.7rem;
+    color: black;
+    transition: 0.1s ease-out;
+    box-sizing: border-box;
+}
+
+.material-textfield .mail-inputs:focus {
+    border-color: var(--primary-color);
+}
+
+.material-textfield .mail-inputs:focus+label {
+    color: var(--primary-color);
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+}
+
+.material-textfield .mail-inputs:not(:placeholder-shown)+label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+}
+
+.form-rows .row-inputs {
+    width: 47%;
+}
+
+.form-rows .last-row-input {
+    width: 100%;
+}
+
+.last-row-input textarea {
+    height: 177px;
+    resize: none;
+}
+
+.last-row-input label {
+    top: 26px;
+}
+
+.email-form .form-submit-area {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.email-form .email-submit-btn {
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    padding: 20px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    color: var(--second-primary-color);
+    font-family: Nunito, sans-serif;
+    cursor: pointer;
+}
+
+.email-submit-btn span {
+    margin-left: 6px;
+}
+
+.contact-content .contact-right {
+    width: 40%;
+    height: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background: var(--primary-color);
+}
+
+.contact-right .right-top {}
+
+.right-top .right-heading {
+    margin: 0;
+    color: var(--second-primary-color);
+    font-weight: 750;
+    font-family: Nunito, sans-serif;
+    font-size: 25px;
+}
+
+.contact-right .right-middel {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.right-middel .contact-card {
+    width: 100%;
+    height: min-content;
+    text-align: center;
+    padding: 20px 20px 15px 20px;
+    box-sizing: border-box;
+}
+
+.right-middel :last-child .card-icon {
+    padding: 15px 18px 15px 18px;
+}
+
+.contact-card .card-icon {
+    padding: 15px;
+    border-radius: 8px;
+    background: rgb(255 133 102);
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.contact-card .card-icon i {
+    color: white;
+    font-size: 22px;
+}
+
+.contact-card .contact-detail {
+    color: var(--second-primary-color);
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 8px;
+    max-width: 300px;
+    line-height: 23px;
+}
+
+.contact-right .right-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.right-bottom i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 993px) {
+    .contact-right .right-middel {
+        margin-top: 25px;
+    }
+
+    .contact-right .right-bottom {
+        margin-top: 30px;
+    }
+
+    .email-form .email-submit-btn {
+        padding: 17px 22px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .contact-content .contact-bottom {
+        flex-direction: column;
+        height: max-content
+    }
+
+    .contact-content .contact-left {
+        width: 100%;
+    }
+
+    .contact-content .contact-right {
+        width: 100%;
+        ;
+        margin-top: 30px;
+    }
+
+    .contact-right .right-middel {
+        margin-top: 50x;
+    }
+
+    .contact-right .right-bottom {
+        margin-top: 80px;
+    }
+
+    .email-form .form-rows {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .form-rows .row-inputs,
+    .last-row-input {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .email-form .form-submit-area {
+        justify-content: center;
+    }
+
+    .email-form .email-submit-btn {
+        padding: 14px 19px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 300px) {
+    .contact-content .contact-left {
+        padding: 15px;
+    }
+}
+
+
+/* loading animation  */
+.loadingAni{
+    width: 100vw;
+    height: 100vh;
+    background: hsla(204, 18%, 11%, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loadingAni.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.loadingAni .loader{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    border-top: 5px solid var(--primary-color);
+    animation: loaderAni .7s linear infinite;
+}
+
+@keyframes loaderAni {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

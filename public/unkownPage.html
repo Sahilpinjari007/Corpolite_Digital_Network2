@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORPOLITE Digital Network</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/unknownPage.css">
+
+    <script src="https://kit.fontawesome.com/aa9801b5c5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="" class="logo"><img src="../assets/logo.png" alt="corpolite logo"></a>
+                <nav class="header-nav">
+                    <ul class="nav-ul">
+                        <li class="nav-items"><a href="https://corpolitedigialnetwork.onrender.com/" class="nav-links">Home <span
+                                    class="nav-active-bars"></span></a></li>
+                        <li class="nav-items"><a href="https://corpolitedigialnetwork.onrender.com/services" class="nav-links">Services <span
+                                    class="nav-active-bars"></span></a></li>
+                        <li class="nav-items"><a href="https://corpolitedigialnetwork.onrender.com/about" class="nav-links">About <span
+                                    class="nav-active-bars"></span></a></li>
+                        <li class="nav-items"><a href="https://corpolitedigialnetwork.onrender.com/contact" class="nav-links">Contact
+                                <span class="nav-active-bars"></span></a></li>
+                    </ul>
+                </nav>
+                <button class="nav-btn">
+                    <i class="fa-solid fa-bars nav-icon"></i>
+                    <i class="fa-solid fa-xmark nav-icon active"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 404 section  -->
+    <div class="page-404-section">
+        <div class="page-404-content container">
+            <div class="page-404-right">
+                <div class="right-content">
+                    <h1 class="page-404-heading">404</h1>
+                    <h2 class="page-404-sub-heading">Oops... Page Not Found!</h2>
+
+                    <p class="page-404-btn-action-para">Try using the button below to go to main page of the site</p>
+
+                    <a href="https://corpolitedigialnetwork.onrender.com/">
+                        <button class="go-home-btn"><i class="fa-solid fa-arrow-left"></i> Go to Home</button>
+                    </a>
+                </div>
+            </div>
+            <div class="page-404-left">
+                <img src="../assets/404_unkownPage.png" alt="404 img">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class="footer-containt container">
+            <div class="footer-top-left-section">
+                <div class="footer-left-left-section">
+                    <img class="footer-logo" src="../assets/logo2.png" alt="logo">
+                    <p class="footer-logo-des">(Network of Trusted Marketing)</p>
+                </div>
+                <div class="footer-left-right-section">
+                    <h3>Follow us</h3>
+
+                    <div class="social-icons">
+
+                        <a href="#">
+                            <div class="social-icon" style="background-color: #3b5998;"><i
+                                    class="fa-brands fa-facebook-f"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="social-icon" style="background-color: #55acee;"><i
+                                    class="fa-brands fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social-icon" style="background-color: #0976b4;"><i
+                                    class="fa-brands fa-linkedin-in"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="social-icon" style="background-color: #b7242a;"><i
+                                    class="fa-brands fa-instagram"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-top-right-section">
+                <div class="footer-right-left-section">
+                    <h3 class="footer-section-heading">MENU</h3>
+                    <ul>
+                        <li><a href="https://corpolitedigialnetwork.onrender.com/">Home</a></li>
+                        <li><a href="https://corpolitedigialnetwork.onrender.com/services">Services</a></li>
+                        <li><a href="https://corpolitedigialnetwork.onrender.com/about">About</a></li>
+                        <li><a href="https://corpolitedigialnetwork.onrender.com/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right-right-section">
+                    <h2 class="footer-section-heading footer-contact-heading">GET IN TUCH</h2>
+
+                    <ul>
+                        <li><span class="contact-email">corpolitedigitalnetwork@gmail.com</span></li>
+                        <li><span class="contact-number1">+91 9545443282</span></li>
+                        <li><span class="contact-number2">+91 7038673517</span></li>
+                        <li><span class="contact-website">www.corpolitedigitalnetwork.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-full-footer">
+            <h4>Copyright © 2018, All Right Reserved Seobin</h4>
+        </div>
+    </footer>
+
+    <script src="../js/unknown.js"></script>
+    <script>
+
+        const navBtn = document.querySelector('.nav-btn');
+        const navBar = document.querySelector('.header-nav');
+        const navIcon = Array.from(document.querySelectorAll('.nav-icon'));
+
+        // nav bar code
+        navBtn.addEventListener('click', () => {
+            navBar.classList.toggle('active');
+            navIcon.forEach((elem) => {
+                elem.classList.toggle('active');
+            })
+        });
+
+        // header
+        const header = document.querySelector('.header');
+        window.addEventListener("scroll", function (event) {
+
+            if (Math.round(this.scrollY) >= 400) {
+                header.classList.add('active');
+
+                if (Math.round(this.scrollY) >= 500) {
+                    header.style.top = '0px'
+                }
+                else {
+                    header.style.top = '-200px'
+                }
+            }
+            else {
+                header.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

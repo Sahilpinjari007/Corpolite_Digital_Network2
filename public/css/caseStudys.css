@@ -1,0 +1,205 @@
+:root {
+
+    --primary-color: #fa6742;
+    --second-primary-color: #fff;
+    --thard-primary-color: #2e2c2d;
+    --light-font-color: #545353;
+    --secon-font-light-color: #919191;
+    --second-bg-color: #f7f9f8;
+    --footer-first-color: #151414;
+    --footer-second-color: #202020;
+    --footer-txt-color: #686868;
+}
+
+/* case study animation  */
+.case-study-ani {
+    width: 60px;
+    height: 2.5px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 20px 30px;
+}
+
+.case-study-ani .case-study-ani-bar-left {
+    width: 15%;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+.case-study-ani .case-study-ani-bar-right {
+    width: 75%;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+
+/* all case study container  */
+.all-case-studys {
+    width: 100vw;
+    height: max-content;
+    padding-block: 100px;
+}
+
+.all-case-studys .all-case-studys-content {
+    margin: auto;
+}
+
+.all-case-studys-content .case-studys-top {
+    width: 100%;
+    text-align: center;
+}
+
+.all-case-studys-content .case-studys-bottom {
+    width: 100%;
+    max-height: max-content;
+}
+
+.case-studys-bottom .case-study {
+    background: unset;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.case-studys-bottom :last-child.case-study {
+    margin-bottom: 0px;
+}
+
+.case-study .case-study-content {
+    width: 100%;
+    height: 450px;
+    max-height: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.case-study .revers-case-study{
+    flex-direction: row-reverse;
+}
+
+.case-study-content .case-study-left,
+.case-study-content .case-study-right {
+    width: 100%;
+    height: 100%;
+    max-height: max-content;
+}
+
+.case-study-content .case-study-left {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.revers-case-study .case-study-left {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.case-study-left .case-study-img {
+    width: max-content;
+    padding-inline: 15px;
+}
+
+.case-study-img img{
+    width: 430px;
+    background: #fa6742;
+}
+
+.case-study-content .case-study-right {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.revers-case-study .case-study-right{
+    display: flex;
+    justify-content: start;
+}
+
+.case-study-right .case-study-details {
+    height: max-content;
+    padding-inline: 15px;
+    margin-top: 50px;
+}
+
+.case-study-details .case-study-heading {
+    font-size: 30px;
+    max-width: 400px;
+}
+
+.case-study-details .case-study-desc {
+    color: var(--secon-font-light-color);
+    margin-bottom: 15px;
+    max-width: 450px;
+}
+
+@media (max-width: 1200px) {
+    .case-study-img img{
+        width: 400px;
+    }
+    
+    .case-study-right .case-study-details {
+        width: 370px;
+        height: max-content;
+    }
+}
+
+@media (max-width: 992px) {
+    .case-study-left .case-study-img {
+        padding-left: 0;
+    }
+
+    .case-study-img img{
+        width: 300px;
+    }
+
+    .case-study-right .case-study-details {
+        padding-right: 0;
+        width: 270px;
+        height: max-content;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .case-study .case-study-content {
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .case-study-content .case-study-left,
+    .case-study-content .case-study-right {
+        width: 100%;
+        height: 100%;
+        max-height: max-content;
+    }
+
+    .case-study-left .case-study-img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: max-content;
+    }
+
+
+    .case-study-left .case-study-img img {
+        width: max-content;
+        height: max-content;
+        max-width: 100%;
+        margin: 0px auto 60px auto;
+    }
+
+    .case-study-right .case-study-details {
+        padding: 0;
+        width: 100%;
+        height: max-content;
+        margin: 0px auto 60px auto;
+    }
+
+    .case-study-details .case-study-desc {
+        max-width: unset;
+    }
+}

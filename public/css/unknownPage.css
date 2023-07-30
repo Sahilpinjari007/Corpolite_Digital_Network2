@@ -1,0 +1,117 @@
+:root {
+
+    --primary-color: #fa6742;
+    --second-primary-color: #fff;
+    --thard-primary-color: #2e2c2d;
+    --light-font-color: #545353;
+    --secon-font-light-color: #919191;
+    --second-bg-color: #f7f9f8;
+    --footer-first-color: #151414;
+    --footer-second-color: #202020;
+    --footer-txt-color: #686868;
+}
+
+.page-404-section {
+    width: 100vw;
+    padding-block: 100px;
+}
+
+.page-404-section .page-404-content {
+    display: flex;
+    align-items: center;
+}
+
+.page-404-content .page-404-right,
+.page-404-content .page-404-left {
+    width: 100%;
+    height: 500px;
+}
+
+.page-404-content .page-404-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-404-right .right-content {
+    text-align: center;
+}
+
+.right-content .page-404-heading {
+    font-size: 150px;
+    width: max-content;
+    margin: auto;
+}
+
+.right-content .page-404-sub-heading {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.right-content .page-404-btn-action-para {
+    color: var(--secon-font-light-color);
+    margin-bottom: 30px;
+}
+
+.right-content .go-home-btn {
+    border: none;
+    outline: none;
+    padding: 16px 34px;
+    border-radius: 30px;
+    font-family: Nunito, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--second-primary-color);
+    cursor: pointer;
+}
+
+.go-home-btn i{
+    margin-right: 5px;
+}
+
+.page-404-content .page-404-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-404-content .page-404-left img {
+    max-width: 100%;
+    height: max-content;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 992px) {
+
+    .page-404-section .page-404-content {
+        flex-direction: column-reverse;
+    }
+
+    .page-404-right .right-content {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .page-404-content .page-404-right,
+    .page-404-content .page-404-left {
+        width: 100%;
+        height: max-content;
+    }
+}
+
+@media (max-width: 350px) {
+    .right-content .page-404-heading {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 250px) {
+    .right-content .page-404-heading {
+        max-width: 100%;
+        height: max-content;
+        font-size: 5rem;
+    }
+}
