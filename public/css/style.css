@@ -722,7 +722,7 @@ header .header-content {
 
 @keyframes supTeamSliderAni {
     from {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 
     to {
@@ -1031,7 +1031,7 @@ header .header-content {
 
 @keyframes workSlideAni {
     from {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 
     to {
