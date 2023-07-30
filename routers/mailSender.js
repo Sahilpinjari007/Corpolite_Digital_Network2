@@ -6,15 +6,14 @@ const nodemailer = require('nodemailer');
 router.post('/', (req, res) => {
 
     const { name, emailFrom, number, subject, massage } = req.body;
-    console.log(req.body);
 
     let transporter = nodemailer.createTransport({
-        host: process.env.MAILE_HOSTER,
-        port: process.env.MAILE_HOSTER_PORT,
+        host: `${process.env.MAILE_HOSTER}`,
+        port: `${process.env.MAILE_HOSTER_PORT}`,
         secure: false,
         auth: {
-            user: process.env.MAILE_HOST_USER,
-            pass: process.env.MAILE_HOST_PASS
+            user: `${process.env.MAILE_HOST_USER}`,
+            pass: `${process.env.MAILE_HOST_PASS}`
         }
     });
 
